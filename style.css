@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+.container {
+    --max-width: 900px;
+    --padding: 1rem;
+    width: min(var(--max-width), 100% - (var(--padding)));
+    margin-inline: auto;
+}
+
+.button {
+    border: 0;
+    border-radius: 40vmax;
+    padding: 9px 1.95rem ;
+    color: #fff;
+    background-color: #2558CB;
+    min-width: 270px;
+    /* position:relative; */
+    cursor: pointer;
+    height: 44px;
+}
+
+.nav-logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.ecotelecom_logo {
+    width: 90px;
+}
+
+.ds_logo {
+    width: 70px;
+}
+.main--btn {
+  margin-top: 2rem;
+}
+/* .icon{
+    position:absolute;
+    left:36px;
+    top:0;
+    
+  } */
+
+  .icon {
+    margin-right: 1rem;
+    width: 24px;
+  }
+
+.main--title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider > * {
+  width: 80%;
+  flex: 0 0 auto;
+ margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .slider > * {
+    width: 40%;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider > * {
+    width: 29%;
+  }
+}
+
+
+
+.a11y-slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 1rem 0 2em;
+    padding: 0;
+}
+
+
+
+.a11y-slider-dots li {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0 6px;
+    color: #fff;
+}
+
+.a11y-slider-dots li button {
+    display: block;
+    font-size: 0;
+    
+    border: 1px solid!important;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.a11y-slider-dots li button.active {
+    background: #2558CB;
+}
+
+.slider-item {
+    border-radius: 16px;
+    padding: 1rem 0.5rem;
+    border: #2558CB 1px solid;
+}
+
+.slider-item > p{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.slider-item > h3{
+  
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.button-ecotelecom {
+  border: 0;
+  border-radius: 40vmax;
+  padding: 9px 1.95rem ;
+  color: #fff;
+  cursor: pointer;
+  font-size: .8rem;
+  width: 80%;
+}
+
+@media (min-width: 300px) {
+  .main--title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main--title {
+    font-size: 24px;
+  }
+}
